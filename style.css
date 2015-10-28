@@ -1,0 +1,195 @@
+body {
+  font-family: 'Source Sans Pro';
+  padding-top: 20px;
+  padding-bottom: 90px;
+}
+
+.navbar-empty .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-empty .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-empty .navbar-brand {
+  padding: 10px 15px;
+}
+
+.navbar-nav>li>.navbar-sd-link {
+  color: rgba(17, 17, 17, 0.5);
+  font-weight: 700;
+}
+
+@media (min-width: 767px) {
+  .navbar-nav>li>.navbar-sd-link {
+    padding: 15px 5px;
+  }
+}
+
+@media (min-width: 990px) {
+  .navbar-nav>li>.navbar-sd-link {
+    padding: 15px 24px;
+  }
+}
+
+.navbar-sd-button, .navbar-sd-button:active, .navbar-sd-button:focus {
+  color: #011111;
+  border: 3px solid #0097fd;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+h1 {
+  font-family: 'Merriweather';
+  font-size: 35px;
+  font-weight: 800;
+  display: block;
+  max-width: 606px;
+  margin-top: 70px;
+}
+
+h2 {
+  font-family: 'Merriweather';
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.reveal {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.reveal-caret {
+  margin-left: 20px;
+}
+
+a, a:hover, a:active, a:focus {
+  color: #cc3333;
+}
+
+.span-grid span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 3px 3px 0;
+}
+
+.span-grid-opis span {
+  background-color: lightgray;
+}
+
+.span-grid-maintenance span {
+  background-color: rgb(204, 51, 51);
+}
+
+.span-grid-opii span {
+  background-color: rgb(58, 103, 232);
+}
+
+.exp-list {
+  list-style-type: none;
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+.exp-list li {
+  counter-increment: step-counter;
+}
+
+.exp-list li:before {
+  content: counter(step-counter);
+  color: #cd3939;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.exp-list-title {
+  border-bottom: 3px solid rgb(253, 255, 102);
+  font-weight: 700;
+  font-size: 26px;
+  margin-left: 40px;
+}
+
+.exp-list-body {
+  margin-left: 65px;
+}
+
+.plead {
+  border: 5px solid #ddd;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.plead h1 {
+  margin-top: 20px;
+}
+
+.btn-sd {
+  background-color: #0097fd;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 0;
+  padding: 10px 30px;
+  display: block;
+  width: 290px;
+  margin: 32px auto 0 auto;
+}
+
+.suggestion {
+  padding: 15px 15px 15px 80px;
+  background: url('img/exclamation.png') 20px center no-repeat rgb(228, 253, 221);
+}
+
+.signature {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(24, 24, 24, 0.85);
+  color: #fff;
+  height: 80px;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.signature-xs {
+  height: 60px;
+  font-size: 20px;
+}
+
+.signature-xs a {
+  color: #fff;
+}
+
+.signature-form input[type='text'] {
+  margin-right: 10px;
+}
+
+.signature-form input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+.signature-form button {
+  margin-left: 10px;
+  background-color: #0097fd;
+  color: white;
+  border: 0;
+  border-radius: 0;
+}
+
+
+.signature-form-xs {
+  margin-top: 30px;
+  background-color: rgba(24, 24, 24, 0.85);
+  color: white;
+  padding: 20px 30px;
+  display: none;
+}
