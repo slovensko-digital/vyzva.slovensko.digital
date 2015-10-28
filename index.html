@@ -22,6 +22,13 @@
     <![endif]-->
   </head>
   <body>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <nav class="navbar navbar-empty">
       <div class="container">
         <div class="navbar-header">
@@ -599,6 +606,9 @@
           </div>
           <button type="submit" class="btn btn-default">Podpísať výzvu</button>
         </form>
+        <div class="thanks collapse">
+          Ďakujeme za podporu! <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
+        </div>
       </div>
     </div>
 
@@ -622,18 +632,23 @@
         </div>
         <button type="submit" class="btn btn-default">Podpísať výzvu</button>
       </form>
+      <div class="thanks collapse">
+        Ďakujeme za podporu! <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
+      </div>
     </footer>
 
     <footer id="signature-xs" class="bottom-fixed visible-xs-block signature-block signature-block-centered">
-      <a href="#signature-form-xs" onclick="$('#signature-form-xs').show(); $('#signature-xs').remove();">Podpísať výzvu</a>
+      <a class="signature-block-main"href="#signature-form-xs" onclick="$('#signature-form-xs').show(); $('#signature-xs').remove();">Podpísať výzvu</a>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <script>
       $('.signature-form').submit(function() {
-        $(this).replaceWith('Ďakujeme!');
+        $(this).replaceWith('');
+        $('.thanks').show();
       });
     </script>
+    <div id="fb-root"></div>
   </body>
 </html>
