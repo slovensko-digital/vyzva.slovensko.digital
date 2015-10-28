@@ -1,3 +1,14 @@
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather-Regular.eot');
+  src: url('fonts/Merriweather-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Merriweather-Regular.woff') format('woff'),
+  url('fonts/Merriweather-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Merriweather';
   src: url('fonts/Merriweather-Bold.eot');
@@ -19,9 +30,14 @@
 }
 
 body {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
   padding-top: 20px;
   padding-bottom: 90px;
+}
+
+.container {
+  max-width: 970px;
 }
 
 .navbar-empty .navbar-toggle {
@@ -38,7 +54,9 @@ body {
 
 .navbar-nav>li>.navbar-sd-link {
   color: rgba(17, 17, 17, 0.5);
-  font-weight: 700;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 @media (min-width: 767px) {
@@ -60,24 +78,32 @@ body {
   padding-bottom: 12px !important;
 }
 
+.navbar-nav li .navbar-sd-button {
+  color: black;
+}
+
 h1 {
   font-family: "Merriweather", "Georgia", "Times New Roman", serif;
-  font-size: 35px;
-  font-weight: 800;
+  font-size: 41px;
+  font-style: normal;
   display: block;
   max-width: 606px;
-  margin-top: 70px;
+  margin-top: 140px;
+  margin-bottom: 50px;
+  line-height: 1.2em;
+  font-weight: 800;
+  color: black;
 }
 
 h2 {
   font-family: "Merriweather", "Georgia", "Times New Roman", serif;
-  font-size: 20px;
-  font-weight: 800;
-  margin-top: 50px;
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 2em;
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 30px;
 }
 
@@ -86,11 +112,19 @@ p {
   text-transform: uppercase;
 }
 
+.reveal a {
+  text-decoration: underline;
+}
+
 .reveal-caret {
   margin-left: 20px;
 }
 
-a, a:hover, a:active, a:focus {
+em.red {
+  font-style: normal;
+}
+
+a, a:hover, a:active, a:focus, .red {
   color: #cc3333;
 }
 
@@ -115,12 +149,13 @@ a, a:hover, a:active, a:focus {
 
 .exp-list {
   list-style-type: none;
-  max-width: 900px;
+  max-width: 850px;
   margin-top: 20px;
 }
 
 .exp-list li {
   counter-increment: step-counter;
+  margin-bottom: 3em;
 }
 
 .exp-list li:before {
@@ -129,6 +164,7 @@ a, a:hover, a:active, a:focus {
   font-family: "Merriweather", "Georgia", "Times New Roman", serif;
   font-size: 48px;
   font-weight: 800;
+  font-style: normal;
 }
 
 .exp-list-title {
@@ -142,16 +178,6 @@ a, a:hover, a:active, a:focus {
   margin-left: 65px;
 }
 
-.plead {
-  border: 5px solid #ddd;
-  padding: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.plead h1 {
-  margin-top: 20px;
-}
 
 .btn-sd {
   background-color: #0097fd;
@@ -167,7 +193,7 @@ a, a:hover, a:active, a:focus {
 
 .suggestion {
   padding: 15px 15px 15px 80px;
-  background: url('fonts/fonts/img/exclamation.png') 20px center no-repeat rgb(228, 253, 221);
+  background: url('img/exclamation.png') 20px center no-repeat rgb(228, 253, 221);
 }
 
 .bottom-fixed {
@@ -203,5 +229,27 @@ a, a:hover, a:active, a:focus {
   background-color: #0097fd;
   color: white;
   border: 0;
+  border-radius: 0;
+}
+
+
+section {
+  margin: 10em 0;
+}
+
+.letter {
+  border: 5px solid #ddd;
+  padding: 30px 50px;
+  text-align: justify;
+}
+
+.letter h1 {
+  margin-top: 20px;
+  max-width: none;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.form-control {
   border-radius: 0;
 }
