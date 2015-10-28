@@ -126,6 +126,7 @@ a, a:hover, a:active, a:focus {
   border: 5px solid #ddd;
   padding: 20px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .plead h1 {
@@ -149,24 +150,24 @@ a, a:hover, a:active, a:focus {
   background: url('img/exclamation.png') 20px center no-repeat rgb(228, 253, 221);
 }
 
-.signature {
+.bottom-fixed {
   position: fixed;
   bottom: 0;
+}
+
+.signature-block {
   background-color: rgba(24, 24, 24, 0.85);
   color: #fff;
-  height: 80px;
   width: 100%;
-  padding-top: 20px;
-  text-align: center;
+  padding: 20px;
 }
 
-.signature-xs {
-  height: 60px;
-  font-size: 20px;
-}
-
-.signature-xs a {
+.signature-block a, .signature-block a:hover, .signature-block a:focus, .signature-block:active {
   color: #fff;
+}
+
+.signature-block-centered {
+  text-align: center;
 }
 
 .signature-form input[type='text'] {
@@ -183,13 +184,4 @@ a, a:hover, a:active, a:focus {
   color: white;
   border: 0;
   border-radius: 0;
-}
-
-
-.signature-form-xs {
-  margin-top: 30px;
-  background-color: rgba(24, 24, 24, 0.85);
-  color: white;
-  padding: 20px 30px;
-  display: none;
 }

@@ -579,29 +579,33 @@
 
       <iframe name="hidden_iframe" style="display: none"></iframe>
 
-      <form id="signature-form-xs" class="form-inline signature-form signature-form-xs"
-        action="https://docs.google.com/forms/d/1fxTp7HiNVin0z51FHI9JkKqOrD9roIVy0m2xF02JEQU/formResponse"
-        method="post">
-        <div class="form-group">
-          <label class="sr-only" for="name">Vaše meno</label>
-          <input name="entry.1541596458" type="text" class="form-control" id="name" placeholder="Vaše meno">
-        </div>
-        <div class="form-group">
-          <label for="email" class="sr-only">Váš email</label>
-          <input name="entry.895051651" type="text" class="form-control" id="email" placeholder=" Váš email">
-        </div>
-        <div class="checkbox">
-          <label>
-            <input name="entry.1757353470" type="checkbox">som IT odborník a viem pomôcť
-          </label>
-        </div>
-        <button type="submit" class="btn btn-default">Podpísať výzvu</button>
-      </form>
+      <div id="signature-form-xs" class="signature-block collapse">
+        <form class="form-inline signature-form"
+          action="https://docs.google.com/forms/d/1fxTp7HiNVin0z51FHI9JkKqOrD9roIVy0m2xF02JEQU/formResponse"
+          target="hidden_iframe"
+          method="post">
+          <div class="form-group">
+            <label class="sr-only" for="name">Vaše meno</label>
+            <input name="entry.1541596458" type="text" class="form-control" id="name" placeholder="Vaše meno">
+          </div>
+          <div class="form-group">
+            <label for="email" class="sr-only">Váš email</label>
+            <input name="entry.895051651" type="text" class="form-control" id="email" placeholder=" Váš email">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input name="entry.1757353470" type="checkbox">som IT odborník a viem pomôcť
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Podpísať výzvu</button>
+        </form>
+      </div>
     </div>
 
-    <footer class="signature hidden-xs">
+    <footer class="bottom-fixed hidden-xs signature-block signature-block-centered">
       <form class="form-inline signature-form"
         action="https://docs.google.com/forms/d/1fxTp7HiNVin0z51FHI9JkKqOrD9roIVy0m2xF02JEQU/formResponse"
+        target="hidden_iframe"
         method="post">
         <div class="form-group">
           <label class="sr-only" for="name">Vaše meno</label>
@@ -620,11 +624,16 @@
       </form>
     </footer>
 
-    <footer id="signature-xs" class="signature signature-xs visible-xs-block">
+    <footer id="signature-xs" class="bottom-fixed visible-xs-block signature-block signature-block-centered">
       <a href="#signature-form-xs" onclick="$('#signature-form-xs').show(); $('#signature-xs').remove();">Podpísať výzvu</a>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script>
+      $('.signature-form').submit(function() {
+        $(this).replaceWith('Ďakujeme!');
+      });
+    </script>
   </body>
 </html>
