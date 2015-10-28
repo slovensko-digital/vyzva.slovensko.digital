@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather-Bold.eot');
+  src: url('fonts/Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Merriweather-Bold.woff') format('woff'),
+  url('fonts/Merriweather-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/MerriweatherUltraBold.eot');
+  src: url('fonts/MerriweatherUltraBold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/MerriweatherUltraBold.woff') format('woff'),
+  url('fonts/MerriweatherUltraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 body {
   font-family: 'Source Sans Pro';
   padding-top: 20px;
@@ -41,7 +61,7 @@ body {
 }
 
 h1 {
-  font-family: 'Merriweather';
+  font-family: "Merriweather", "Georgia", "Times New Roman", serif;
   font-size: 35px;
   font-weight: 800;
   display: block;
@@ -50,7 +70,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Merriweather';
+  font-family: "Merriweather", "Georgia", "Times New Roman", serif;
   font-size: 20px;
   font-weight: 800;
   margin-top: 50px;
@@ -106,7 +126,7 @@ a, a:hover, a:active, a:focus {
 .exp-list li:before {
   content: counter(step-counter);
   color: #cd3939;
-  font-family: Merriweather;
+  font-family: "Merriweather", "Georgia", "Times New Roman", serif;
   font-size: 48px;
   font-weight: 800;
 }
@@ -147,7 +167,7 @@ a, a:hover, a:active, a:focus {
 
 .suggestion {
   padding: 15px 15px 15px 80px;
-  background: url('img/exclamation.png') 20px center no-repeat rgb(228, 253, 221);
+  background: url('fonts/fonts/img/exclamation.png') 20px center no-repeat rgb(228, 253, 221);
 }
 
 .bottom-fixed {
