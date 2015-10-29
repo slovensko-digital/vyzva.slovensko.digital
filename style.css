@@ -152,12 +152,8 @@ p {
   text-transform: uppercase;
 }
 
-.reveal a {
-  text-decoration: underline;
-}
-
 .reveal-caret {
-  margin-left: 20px;
+  margin-left: 0.5em;
 }
 
 em.red {
@@ -274,7 +270,7 @@ a, a:hover, a:active, a:focus, .red {
 
 
 section {
-  margin: 10em 0;
+  margin: 6em 0;
 }
 
 .letter {
@@ -296,4 +292,14 @@ section {
 
 p.lead {
   font-weight: 500;
+}
+
+.btn-sd {
+  border: 3px solid #0097fd;
+}
+
+.btn-sd:hover {
+  border: 3px solid #0097fd;
+  background-color: white;
+  color: black;
 }
