@@ -205,8 +205,8 @@ a, a:hover, a:active, a:focus, .red {
 
 .exp-list-title {
   border-bottom: 3px solid rgb(253, 255, 102);
-  font-weight: 700;
-  font-size: 26px;
+  font-weight: 500;
+  font-size: 30px;
   margin-left: 40px;
 }
 
@@ -223,7 +223,6 @@ a, a:hover, a:active, a:focus, .red {
   border-radius: 0;
   padding: 10px 30px;
   display: block;
-  width: 290px;
   margin: 32px auto 0 auto;
 }
 
@@ -250,24 +249,40 @@ a, a:hover, a:active, a:focus, .red {
 
 .signature-block-centered {
   text-align: center;
+  font-size: 1.5em;
+}
+
+.signature-form input {
+  height: 3em;
+  vertical-align: middle;
+}
+
+.signature-form input, .signature-form .checkbox, .signature-form button {
+  font-size: 15px;
 }
 
 .signature-form input[type='text'] {
-  margin-right: 10px;
+  margin-right: 1em;
 }
 
 .signature-form input[type='checkbox'] {
-  margin-right: 5px;
+  margin-top: 0;
+  margin-right: 0.5em;
 }
 
 .signature-form button {
-  margin-left: 10px;
+  margin-left: 2em;
   background-color: #0097fd;
   color: white;
   border: 0;
   border-radius: 0;
+  padding: 1em 3em;
+  font-weight: bold;
 }
 
+.signature-form .checkbox span {
+  font-weight: bold;
+}
 
 section {
   margin: 6em 0;
@@ -280,6 +295,7 @@ section {
 }
 
 .letter h1 {
+  text-align: left;
   margin-top: 20px;
   max-width: none;
   font-style: normal;
@@ -294,12 +310,49 @@ p.lead {
   font-weight: 500;
 }
 
-.btn-sd {
+.letter .btn-sd {
+  border: 3px solid #0097fd;
+  width: 20em;
+  padding: 1em 3em;
+}
+
+.letter .btn-sd:hover {
+  background-color: white;
+  color: black;
+}
+
+.thanks {
+  font-size: 20px;
+}
+
+.signature-block button, .signature-block button:hover {
   border: 3px solid #0097fd;
 }
 
-.btn-sd:hover {
-  border: 3px solid #0097fd;
-  background-color: white;
-  color: black;
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  color: #555555;
+}
+
+.navbar .fb-like {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+@media (max-width: 767px) {
+  .letter {
+    border: none;
+    padding: 0;
+  }
+
+  .exp-list-body {
+    margin-left: 0;
+  }
+
+  .nav.like {
+    display: none;
+  }
 }
