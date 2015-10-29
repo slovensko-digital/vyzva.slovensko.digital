@@ -69,10 +69,29 @@ body {
   color: black;
   padding-top: 20px;
   padding-bottom: 90px;
+  font-size: 16px;
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 .container {
   max-width: 970px;
+  width: 100%;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 30px 40px;
+  }
 }
 
 .navbar-empty .navbar-toggle {
@@ -124,27 +143,27 @@ body {
 
 h1 {
   font-family: "Merriweather", "Georgia", "Times New Roman", serif;
-  font-size: 41px;
+  font-size: 2em;
   font-style: normal;
   display: block;
   max-width: 606px;
-  margin-top: 140px;
-  margin-bottom: 50px;
-  line-height: 1.2em;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  line-height: 1.2;
   font-weight: 800;
   color: black;
 }
 
 h2 {
   font-family: "Merriweather", "Georgia", "Times New Roman", serif;
-  font-size: 30px;
+  font-size: 1.5em;
   font-weight: normal;
   margin-top: 2em;
 }
 
 p {
-  font-size: 20px;
-  margin-top: 30px;
+  font-size: 1em;
+  margin-top: 1.5em;
 }
 
 .reveal {
@@ -187,6 +206,12 @@ a, a:hover, a:active, a:focus, .red {
   list-style-type: none;
   max-width: 850px;
   margin-top: 20px;
+  padding: 0;
+}
+@media (min-width: 640px) {
+  .exp-list {
+    padding-left: 30px;
+  }
 }
 
 .exp-list li {
@@ -198,7 +223,7 @@ a, a:hover, a:active, a:focus, .red {
   content: counter(step-counter);
   color: #cd3939;
   font-family: "Merriweather", "Georgia", "Times New Roman", serif;
-  font-size: 48px;
+  font-size: 2.45em;
   font-weight: 800;
   font-style: normal;
 }
@@ -206,12 +231,16 @@ a, a:hover, a:active, a:focus, .red {
 .exp-list-title {
   border-bottom: 3px solid rgb(253, 255, 102);
   font-weight: 500;
-  font-size: 30px;
-  margin-left: 40px;
+  font-size: 1.5em;
+  margin-left: .75em;
 }
-
 .exp-list-body {
-  margin-left: 65px;
+  margin-left: 0;
+}
+@media (min-width: 640px) {
+  .exp-list-body {
+    margin-left: 2.2em;
+  }
 }
 
 
@@ -219,7 +248,7 @@ a, a:hover, a:active, a:focus, .red {
   background-color: #0097fd;
   color: white;
   font-weight: 700;
-  font-size: 18px;
+  font-size: .9em;
   border-radius: 0;
   padding: 10px 30px;
   display: block;
@@ -249,7 +278,35 @@ a, a:hover, a:active, a:focus, .red {
 
 .signature-block-centered {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+
+@media (min-width: 760px) {
+  .signature-block-centered {
+    font-size: .75em;
+  }
+
+  .signature-block-centered label {
+    font-size: 0.75em;
+  }
+}
+
+@media (min-width: 850px) {
+  .signature-block-centered {
+    font-size: .85em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .signature-block-centered {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1160px) {
+  .signature-block-centered {
+    font-size: 1.2em;
+  }
 }
 
 .signature-form input {
@@ -258,7 +315,11 @@ a, a:hover, a:active, a:focus, .red {
 }
 
 .signature-form input, .signature-form .checkbox, .signature-form button {
-  font-size: 15px;
+  font-size: .70em;
+}
+
+.signature-form .checkbox {
+  font-size: 0.9em;
 }
 
 .signature-form input[type='text'] {
@@ -322,7 +383,7 @@ p.lead {
 }
 
 .thanks {
-  font-size: 20px;
+  font-size: 1em;
 }
 
 .signature-block button, .signature-block button:hover {
@@ -338,8 +399,8 @@ p.lead {
 }
 
 .navbar .fb-like {
-  margin-top: 1em;
-  margin-left: 1em;
+  margin-top: 8px;
+  margin-left: 0.5em;
 }
 
 @media (max-width: 767px) {
@@ -354,5 +415,9 @@ p.lead {
 
   .nav.like {
     display: none;
+  }
+
+  .it {
+    font-size: .75em;
   }
 }
