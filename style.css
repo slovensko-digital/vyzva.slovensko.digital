@@ -1,3 +1,38 @@
+@font-face{
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  src: url('fonts/SourceSansPro-Light.eot') format('embedded-opentype'),
+  url('fonts/SourceSansPro-Light.ttf.woff2') format('woff2'),
+  url('fonts/SourceSansPro-Light.otf.woff') format('woff'),
+  url('fonts/SourceSansPro-Light.otf') format('opentype'),
+  url('fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: url('fonts/SourceSansPro-Regular.eot') format('embedded-opentype'),
+  url('fonts/SourceSansPro-Regular.ttf.woff2') format('woff2'),
+  url('fonts/SourceSansPro-Regular.otf.woff') format('woff'),
+  url('fonts/SourceSansPro-Regular.otf') format('opentype'),
+  url('fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  src: url('fonts/SourceSansPro-Bold.eot') format('embedded-opentype'),
+  url('fonts/SourceSansPro-Bold.ttf.woff2') format('woff2'),
+  url('fonts/SourceSansPro-Bold.otf.woff') format('woff'),
+  url('fonts/SourceSansPro-Bold.otf') format('opentype'),
+  url('fonts/SourceSansPro-Bold.ttf') format('truetype');
+}
 
 @font-face {
   font-family: 'Merriweather';
@@ -76,6 +111,11 @@ body {
   border: 3px solid #0097fd;
   padding-top: 12px !important;
   padding-bottom: 12px !important;
+}
+
+.navbar-nav li .navbar-sd-button:hover {
+  color: white;
+  background-color: #0097fd;
 }
 
 .navbar-nav li .navbar-sd-button {
@@ -192,8 +232,8 @@ a, a:hover, a:active, a:focus, .red {
 }
 
 .suggestion {
-  padding: 15px 15px 15px 80px;
-  background: url('img/exclamation.png') 20px center no-repeat rgb(228, 253, 221);
+  padding: 2em;
+  background-color: rgb(228, 253, 221);
 }
 
 .bottom-fixed {
@@ -252,4 +292,8 @@ section {
 
 .form-control {
   border-radius: 0;
+}
+
+p.lead {
+  font-weight: 500;
 }
