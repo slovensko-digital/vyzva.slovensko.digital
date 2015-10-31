@@ -319,6 +319,7 @@ a, a:hover, a:active, a:focus, .red {
 }
 
 .signature-form .checkbox {
+  margin-left: 0.5em;
   font-size: 0.9em;
 }
 

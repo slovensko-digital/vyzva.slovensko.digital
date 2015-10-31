@@ -611,8 +611,7 @@
       $('.signature-form').submit(function() {
         $(this).replaceWith('');
         $('.thanks').show();
-        ga('set', 'dimension1', $(this).find('input[type=checkbox]')[0].value);
-        ga('send', 'event', 'Actions', 'Signed');
+        ga('send', 'event', 'Actions', 'Signed', $(this).find('input[type=checkbox]').is(':checked') + '');
       });
 
       $.getJSON('https://script.google.com/macros/s/AKfycbymRIxVVycmP1uwYgKNaKrOUNykvXVNapTeNAMSVeyTcm-GYIw/exec', function(data) {
