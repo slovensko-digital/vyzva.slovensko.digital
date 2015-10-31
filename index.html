@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
     <meta name="description" content="">
+    <meta property="og:title" content="Informatizácia na Slovensku má veľký problém." />
+    <meta property="og:site_name" content="slovensko.digital"/>
+    <meta property="og:url" content="http://slovensko.digital" />
+    <meta property="og:description" content="Slovensko od roku 2007 minulo na informatizáciu 900 miliónov eur. Úradníkom však stále robíme poštára a veľa sa nezmenilo." />
+    <meta property="og:image" content="http://slovensko.digital/img/facebook_share.png" />    
+
     <link rel="icon" href="favicon.ico">
 
     <title>slovensko.digital</title>
@@ -328,7 +334,7 @@
           --><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
         </span>
 
-        <p>Sivé štvorčeky <span class="span-grid span-grid-opis"><span></span></span> (900 miliónov) sú peniaze, čo sa už minuli. Červené <span class="span-grid span-grid-maintenance"><span></span></span> (500 miliónov), najskor minieme v&nbsp;najbližších
+        <p>Sivé štvorčeky <span class="span-grid span-grid-opis"><span></span></span> (900 miliónov) sú peniaze, čo sa už minuli. Červené <span class="span-grid span-grid-maintenance"><span></span></span> (500 miliónov), najskôr minieme v&nbsp;najbližších
           piatich rokoch na údržbe existujúcich systémov. <strong>S tým sa nedá už nič urobiť.</strong>
           Tie modré štvorce <span class="span-grid  span-grid-opii"><span></span></span> &times; (800 miliónov) - ďalšie peniaze sa plánujú rozdeliť na nové projekty.</p>
 
@@ -426,8 +432,7 @@
           či “Služby riadené udalosťami - proaktívne služby”, sa vôbec
           nedosiahli. Naopak, sme svedkami toho, že IT projekty vo verejnej
           správe dlhodobo trpia chronickými problémami. Ich výstupy sú laickou i
-          odbornou verejnosťou často vnímané ako ťažko použiteľné, nekvalitné a
-          predražené. Dnes je zrejmé, že len na údržbu vzniknutých informačných
+          odbornou verejnosťou často vnímané ako ťažko použiteľné, nekvalitné a&nbsp;predražené. Dnes je zrejmé, že len na údržbu vzniknutých informačných
           systémov bude musieť štát alokovať ďalšie obrovské zdroje, ktoré
           odhadujeme až na 500 miliónov eur v&nbsp;najbližších piatich rokoch.
           Prebiehajúca marketingová kampaň končiaceho programového obdobia len
@@ -446,7 +451,7 @@
           certifikátov a&nbsp;povinných členstiev v&nbsp;pracovných skupinách, kde proti
           ich dobrovoľníctvu stoja profesionálni lobisti a&nbsp;platení úradníci.
           Vznikajú tak zadania pre projekty, ktoré občanovi neposkytujú
-          adekvátnu pridanú hodnotu, alebo nie sú v&nbsp;súlade s princípmi
+          adekvátnu pridanú hodnotu, alebo nie sú v&nbsp;súlade s&nbsp;princípmi
           informatizácie verejnej správy. Navrhujeme, aby sa všetky zásadné
           rozhodnutia prijímali transparentne a&nbsp;až po diskusii so širokou
           odbornou verejnosťou. Od tejto verejnej odbornej diskusie a&nbsp;kontroly
@@ -556,7 +561,7 @@
           </div>
           <div class="form-group">
             <label for="email" class="sr-only">Váš email</label>
-            <input name="entry.895051651" type="text" class="form-control" id="email" placeholder="Váš email (nepovinne)">
+            <input name="entry.895051651" type="email" class="form-control" id="email" placeholder="Váš email (nepovinne)">
           </div>
           <div class="it">
             <label>
@@ -582,7 +587,7 @@
         </div>
         <div class="form-group">
           <label for="email" class="sr-only">Váš email</label>
-          <input name="entry.895051651" type="text" class="form-control" id="email" placeholder="Váš email (nepovinne)">
+          <input name="entry.895051651" type="email" class="form-control" id="email" placeholder="Váš email (nepovinne)">
         </div>
         <div class="checkbox">
           <label>
@@ -606,6 +611,7 @@
       $('.signature-form').submit(function() {
         $(this).replaceWith('');
         $('.thanks').show();
+        ga('set', 'dimension1', $(this).find('input[type=checkbox]')[0].value);
         ga('send', 'event', 'Actions', 'Signed');
       });
 

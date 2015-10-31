@@ -229,7 +229,7 @@ a, a:hover, a:active, a:focus, .red {
 }
 
 .exp-list-title {
-  border-bottom: 3px solid rgb(253, 255, 102);
+  border-bottom: 5px solid #feffa3;
   font-weight: 500;
   font-size: 1.5em;
   margin-left: .75em;
