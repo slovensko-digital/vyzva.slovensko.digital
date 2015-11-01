@@ -1,0 +1,424 @@
+@font-face{
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  src: url('fonts/SourceSansPro-Light.eot') format('embedded-opentype'),
+  url('fonts/SourceSansPro-Light.ttf.woff2') format('woff2'),
+  url('fonts/SourceSansPro-Light.otf.woff') format('woff'),
+  url('fonts/SourceSansPro-Light.otf') format('opentype'),
+  url('fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: url('fonts/SourceSansPro-Regular.eot') format('embedded-opentype'),
+  url('fonts/SourceSansPro-Regular.ttf.woff2') format('woff2'),
+  url('fonts/SourceSansPro-Regular.otf.woff') format('woff'),
+  url('fonts/SourceSansPro-Regular.otf') format('opentype'),
+  url('fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  src: url('fonts/SourceSansPro-Bold.eot') format('embedded-opentype'),
+  url('fonts/SourceSansPro-Bold.ttf.woff2') format('woff2'),
+  url('fonts/SourceSansPro-Bold.otf.woff') format('woff'),
+  url('fonts/SourceSansPro-Bold.otf') format('opentype'),
+  url('fonts/SourceSansPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather-Regular.eot');
+  src: url('fonts/Merriweather-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Merriweather-Regular.woff') format('woff'),
+  url('fonts/Merriweather-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather-Bold.eot');
+  src: url('fonts/Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Merriweather-Bold.woff') format('woff'),
+  url('fonts/Merriweather-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/MerriweatherUltraBold.eot');
+  src: url('fonts/MerriweatherUltraBold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/MerriweatherUltraBold.woff') format('woff'),
+  url('fonts/MerriweatherUltraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 90px;
+  font-size: 16px;
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+.container {
+  max-width: 970px;
+  width: 100%;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 30px 40px;
+  }
+}
+
+.navbar-empty .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-empty .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-empty .navbar-brand {
+  padding: 10px 15px;
+}
+
+.navbar-nav>li>.navbar-sd-link {
+  color: rgba(17, 17, 17, 0.5);
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (min-width: 767px) {
+  .navbar-nav>li>.navbar-sd-link {
+    padding: 15px 5px;
+  }
+}
+
+@media (min-width: 990px) {
+  .navbar-nav>li>.navbar-sd-link {
+    padding: 15px 24px;
+  }
+}
+
+.navbar-sd-button, .navbar-sd-button:active, .navbar-sd-button:focus {
+  color: #011111;
+  border: 3px solid #0097fd;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.navbar-nav li .navbar-sd-button:hover {
+  color: white;
+  background-color: #0097fd;
+}
+
+.navbar-nav li .navbar-sd-button {
+  color: black;
+}
+
+h1 {
+  font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+  font-size: 2em;
+  font-style: normal;
+  display: block;
+  max-width: 606px;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  line-height: 1.2;
+  font-weight: 800;
+  color: black;
+}
+
+h2 {
+  font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: 2em;
+}
+
+p {
+  font-size: 1em;
+  margin-top: 1.5em;
+}
+
+.reveal {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.reveal-caret {
+  margin-left: 0.5em;
+}
+
+em.red {
+  font-style: normal;
+}
+
+a, a:hover, a:active, a:focus, .red {
+  color: #cc3333;
+}
+
+.span-grid span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 3px 3px 0;
+}
+
+.span-grid-opis span {
+  background-color: lightgray;
+}
+
+.span-grid-maintenance span {
+  background-color: rgb(204, 51, 51);
+}
+
+.span-grid-opii span {
+  background-color: rgb(58, 103, 232);
+}
+
+.exp-list {
+  list-style-type: none;
+  max-width: 850px;
+  margin-top: 20px;
+  padding: 0;
+}
+@media (min-width: 640px) {
+  .exp-list {
+    padding-left: 30px;
+  }
+}
+
+.exp-list li {
+  counter-increment: step-counter;
+  margin-bottom: 3em;
+}
+
+.exp-list li:before {
+  content: counter(step-counter);
+  color: #cd3939;
+  font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+  font-size: 2.45em;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.exp-list-title {
+  border-bottom: 5px solid #feffa3;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-left: .75em;
+}
+.exp-list-body {
+  margin-left: 0;
+}
+@media (min-width: 640px) {
+  .exp-list-body {
+    margin-left: 2.2em;
+  }
+}
+
+
+.btn-sd {
+  background-color: #0097fd;
+  color: white;
+  font-weight: 700;
+  font-size: .9em;
+  border-radius: 0;
+  padding: 10px 30px;
+  display: block;
+  margin: 32px auto 0 auto;
+}
+
+.suggestion {
+  padding: 2em;
+  background-color: rgb(228, 253, 221);
+}
+
+.bottom-fixed {
+  position: fixed;
+  bottom: 0;
+}
+
+.signature-block {
+  background-color: rgba(24, 24, 24, 0.85);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+.signature-block a, .signature-block a:hover, .signature-block a:focus, .signature-block:active {
+  color: #fff;
+}
+
+.signature-block-centered {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media (min-width: 760px) {
+  .signature-block-centered {
+    font-size: .75em;
+  }
+
+  .signature-block-centered label {
+    font-size: 0.75em;
+  }
+}
+
+@media (min-width: 850px) {
+  .signature-block-centered {
+    font-size: .85em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .signature-block-centered {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1160px) {
+  .signature-block-centered {
+    font-size: 1.2em;
+  }
+}
+
+.signature-form input {
+  height: 3em;
+  vertical-align: middle;
+}
+
+.signature-form input, .signature-form .checkbox, .signature-form button {
+  font-size: .70em;
+}
+
+.signature-form .checkbox {
+  margin-left: 0.5em;
+  font-size: 0.9em;
+}
+
+.signature-form input[type='text'] {
+  margin-right: 1em;
+}
+
+.signature-form input[type='checkbox'] {
+  margin-top: 0;
+  margin-right: 0.5em;
+}
+
+.signature-form button {
+  margin-left: 2em;
+  background-color: #0097fd;
+  color: white;
+  border: 0;
+  border-radius: 0;
+  padding: 1em 3em;
+  font-weight: bold;
+}
+
+.signature-form .checkbox span {
+  font-weight: bold;
+}
+
+section {
+  margin: 6em 0;
+}
+
+.letter {
+  border: 5px solid #ddd;
+  padding: 30px 50px;
+  text-align: justify;
+}
+
+.letter h1 {
+  text-align: left;
+  margin-top: 20px;
+  max-width: none;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+p.lead {
+  font-weight: 500;
+}
+
+.letter .btn-sd {
+  border: 3px solid #0097fd;
+  width: 20em;
+  padding: 1em 3em;
+}
+
+.letter .btn-sd:hover {
+  background-color: white;
+  color: black;
+}
+
+.thanks {
+  font-size: 1em;
+}
+
+.signature-block button, .signature-block button:hover {
+  border: 3px solid #0097fd;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  color: #555555;
+}
+
+.navbar .fb-like {
+  margin-top: 8px;
+  margin-left: 0.5em;
+}
+
+@media (max-width: 767px) {
+  .letter {
+    border: none;
+    padding: 0;
+  }
+
+  .exp-list-body {
+    margin-left: 0;
+  }
+
+  .nav.like {
+    display: none;
+  }
+
+  .it {
+    font-size: .75em;
+  }
+}
