@@ -107,10 +107,6 @@ body {
   background-color: #888;
 }
 
-.navbar-empty .navbar-brand {
-  padding: 10px 15px;
-}
-
 .navbar-nav>li>.navbar-sd-link {
   color: rgba(17, 17, 17, 0.5);
   padding: 15px 25px;
@@ -443,9 +439,15 @@ p.lead {
   color: #555555;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .navbar-brand img {
     width: 180px;
+  }
+}
+
+@media (min-width: 380px) {
+  .navbar-empty .navbar-brand {
+    padding: 10px 15px;
   }
 }
 
