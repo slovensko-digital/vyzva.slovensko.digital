@@ -1,3 +1,8 @@
+---
+---
+
+$action-color: #0097fd;
+
 @font-face{
   font-family: 'Source Sans Pro';
   font-weight: 300;
@@ -125,6 +130,10 @@ body {
   }
 }
 
+.navbar-sd-button i.glyphicon {
+  padding-right: 0.5em;
+}
+
 .navbar-sd-button, .navbar-sd-button:active, .navbar-sd-button:focus {
   color: #011111;
   border: 3px solid #0097fd;
@@ -179,7 +188,11 @@ em.red {
   font-style: normal;
 }
 
-a, a:hover, a:active, a:focus, .red {
+a, a:hover, a:active, a:focus {
+  color: $action-color;
+}
+
+.red {
   color: #cc3333;
 }
 
@@ -202,24 +215,25 @@ a, a:hover, a:active, a:focus, .red {
   background-color: rgb(58, 103, 232);
 }
 
-.exp-list {
+.exp-list, .big-list {
   list-style-type: none;
   max-width: 850px;
   margin-top: 20px;
   padding: 0;
 }
+
 @media (min-width: 640px) {
   .exp-list {
     padding-left: 30px;
   }
 }
 
-.exp-list li {
+.exp-list>li {
   counter-increment: step-counter;
   margin-bottom: 3em;
 }
 
-.exp-list li:before {
+.exp-list>li:before {
   content: counter(step-counter);
   color: #cd3939;
   font-family: "Merriweather", "Georgia", "Times New Roman", serif;
@@ -228,7 +242,7 @@ a, a:hover, a:active, a:focus, .red {
   font-style: normal;
 }
 
-.exp-list-title {
+.exp-list-title, .big-list-title {
   border-bottom: 5px solid #feffa3;
   font-weight: 500;
   font-size: 1.5em;
@@ -237,12 +251,42 @@ a, a:hover, a:active, a:focus, .red {
 .exp-list-body {
   margin-left: 0;
 }
+
 @media (min-width: 640px) {
   .exp-list-body {
     margin-left: 2.2em;
   }
 }
 
+.big-list>li {
+  margin: 2em 0;
+}
+
+.big-list-title {
+  margin-left: 0;
+}
+
+
+.date {
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.comments {
+  color: lightgray;
+
+  &:hover {
+    color: #0097fd;
+  }
+}
+
+.news {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin: 1em 0;
+  }
+}
 
 .btn-sd {
   background-color: #0097fd;
@@ -399,9 +443,10 @@ p.lead {
   color: #555555;
 }
 
-.navbar .fb-like {
-  margin-top: 8px;
-  margin-left: 0.5em;
+@media (max-width: 350px) {
+  .navbar-brand img {
+    width: 180px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -422,3 +467,5 @@ p.lead {
     font-size: .75em;
   }
 }
+
+
